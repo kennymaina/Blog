@@ -26,13 +26,13 @@ class Config():
     def init_app(app):
         pass
 
-class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    pass
+# class ProdConfig(Config):
+#     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+#     pass
 
-class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://kenneth:kentoz@localhost/blog'
-    DEBUG = True
+# class DevConfig(Config):
+#     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://kenneth:kentoz@localhost/blog'
+#     DEBUG = True
 
 
 class TestConfig(Config):
