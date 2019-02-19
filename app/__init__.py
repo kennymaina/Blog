@@ -27,11 +27,11 @@ def create_app(config_name):
     login_manager.login_view = 'auth.login'
 
      #initializing the flask extensions
-#     bootstrap.init_app(app)
-#     db.init_app(app)
-#     login_manager.init_app(app)
-#     mail.init_app(app)
-#     simplemde.init_app(app)
+    bootstrap.init_app(app)
+    db.init_app(app)
+    login_manager.init_app(app)
+    mail.init_app(app)
+    simplemde.init_app(app)
 
 
     # configure UploadSet
