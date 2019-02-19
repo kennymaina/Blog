@@ -8,23 +8,23 @@ from flask_mail import Mail
 from flask_moment import Moment
 from flask_simplemde import SimpleMDE
 
-# bootstrap = Bootstrap()
-# db = SQLAlchemy()
-# login_manager = LoginManager()
-# photos = UploadSet('photos',IMAGES)
-# mail = Mail()
-# simplemde = SimpleMDE()
+bootstrap = Bootstrap()
+db = SQLAlchemy()
+login_manager = LoginManager()
+photos = UploadSet('photos',IMAGES)
+mail = Mail()
+simplemde = SimpleMDE()
 
-def create_app(config_name):
-    app = Flask(__name__)
+# def create_app(config_name):
+#     app = Flask(__name__)
 
-    '''
-    creating the app configurations
-    '''
-     #creating the app configurations
-    app.config.from_object(config_options[config_name])
-    login_manager.session_protection = 'strong'
-    login_manager.login_view = 'auth.login'
+#     '''
+#     creating the app configurations
+#     '''
+#      #creating the app configurations
+#     app.config.from_object(config_options[config_name])
+#     login_manager.session_protection = 'strong'
+#     login_manager.login_view = 'auth.login'
 
      #initializing the flask extensions
     bootstrap.init_app(app)
